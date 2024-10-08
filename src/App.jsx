@@ -1,9 +1,13 @@
 import './App.css'
+import Homepage from './components/homepage'
 
 function App() {
   return (
     <>
-      HOLA MUNDO
+    <div className='text-red-300'>
+      <Homepage/> 
+    </div>
+
     </>
   )
 }
