@@ -1,11 +1,11 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
-import appFirebase from "../credentials";
+import appFirebase from "../../../../shared/infrastucture/configs/firebase-credentials";
 
 const auth = getAuth(appFirebase);
 
-const Login = () => {
+const SignIn = () => {
   const [registering, setRegistering] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
   const navigate = useNavigate(); // Importa useNavigate
@@ -29,7 +29,7 @@ const Login = () => {
         await signInWithEmailAndPassword(auth, email, password);
         alert("Sesión iniciada correctamente");
       }
-      navigate("/edit"); // Redirige al componente Edit después de iniciar sesión o registrarse
+      navigate("/managment"); // Redirige al componente Edit después de iniciar sesión o registrarse
     } catch (error) {
       setErrorMessage("Error de autenticación: " + error.message);
     }
@@ -53,4 +53,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default SignIn;

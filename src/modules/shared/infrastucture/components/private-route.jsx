@@ -1,10 +1,12 @@
 import { Navigate, Outlet } from "react-router-dom";
-import { useAuth } from "../hooks/useAuth";
+import { useIsLoggedIn } from "../../../auth/infrastructure/hooks/use-is-logged-in";
 
 const PrivateRoute = () => {
-  const { usuario } = useAuth();
+  const { isLoggedIn, isLoading } = useIsLoggedIn();
 
-  return usuario ? <Outlet /> : <Navigate to="/" replace />;
+  if (isLoading) return null;
+
+  return isLoggedIn ? <Outlet /> : <Navigate to="/sign-in" replace />;
 };
 
 export default PrivateRoute;
