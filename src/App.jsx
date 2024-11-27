@@ -1,11 +1,12 @@
-import './App.css'
+import "./App.css";
+import { AppRouter } from "./modules/shared/infrastucture/providers/router-provider";
 
 function App() {
   return (
-    <>
-      HOLA MUNDO
-    </>
-  )
+    <div>
+      <AppRouter />
+    </div>
+  );
 }
 
-export default App
+export default App;

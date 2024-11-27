@@ -1,0 +1,76 @@
+.head {
+    position: relative;
+    height: 600px;
+    background-image: url('./fondo.jpeg');
+    background-size: cover;
+    background-position: center;
+    border: none;
+    border-radius: 0px 0px 200px 0px;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    padding-top: 100px;
+}
+
+.bg-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(46, 125, 50, 0.7);
+    display: flex;
+    align-items: flex-start;
+    z-index: 1;
+    border: none;
+    border-radius: 0px 0px 200px 0px;
+}
+
+nav {
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+}
+
+.headText {
+    position: relative;
+    text-decoration: none;
+    color: #F5F5F5;
+}
+
+.headText:hover {
+    color: #A5D6A7;
+    /* Cambia el color al hacer hover */
+}
+
+/* Pseudo-elemento para la línea */
+.headText::after {
+    content: "";
+    /* Crea un contenido vacío */
+    position: absolute;
+    /* Posiciona el elemento relativo al texto */
+    left: 0;
+    /* Alinea a la izquierda */
+    bottom: -3px;
+    /* Coloca la línea justo debajo del texto */
+    width: 100%;
+    /* Ocupa el ancho completo del texto */
+    height: 2px;
+    /* Altura de la línea */
+    background-color: #A5D6A7;
+    /* Color de la línea */
+    transform: scaleX(0);
+    /* Inicialmente la línea es invisible */
+    transition: transform 0.3s ease;
+    /* Efecto suave al hacer hover */
+}
+
+/* Efecto hover para el pseudo-elemento */
+.headText:hover::after {
+    transform: scaleX(1);
+    /* Escala la línea para que sea visible */
+}
