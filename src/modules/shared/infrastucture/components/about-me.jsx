@@ -10,7 +10,7 @@ const AboutMe = () => {
           className="object-cover w-2/4 rounded-md shadow-md shadow-black"
         />
         <div className="text-end pt-6 pr-8">
-          <h1>BIENVENIDOS</h1>
+          <h1 className="font-bold text-3xl mb-4">BIENVENIDOS</h1>
           <p>
             Gracias por ingresar al sitio WEB y conocer más sobre nuestro
             maravilloso colegio. El Pestalozzi fue fundado bajo la dirección de

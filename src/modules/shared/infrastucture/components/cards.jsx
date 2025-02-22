@@ -4,7 +4,7 @@ const Cards = () => {
   const cardData = [
     {
       name: "INICIAL",
-      description: "15 estudiantes por salón",
+      description: "20 estudiantes por salón",
       img: "https://images.unsplash.com/photo-1622219809260-ce065fc5277f?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyMzMwNjYxOQ&ixlib=rb-1.2.1&q=85",
     },
     {
@@ -14,12 +14,12 @@ const Cards = () => {
     },
     {
       name: "SECUNDARIA",
-      description: "15 estudiantes por salón",
+      description: "25 estudiantes por salón",
       img: "https://images.unsplash.com/photo-1456885284447-7dd4bb8720bf?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyMzMxNTQzNA&ixlib=rb-1.2.1&q=85",
     },
     {
       name: "ACADEMIA",
-      description: "15 estudiantes por salón",
+      description: "30 estudiantes por salón",
       img: "https://images.unsplash.com/photo-1489980557514-251d61e3eeb6?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyMzMxNjA1MA&ixlib=rb-1.2.1&q=85",
     },
   ];

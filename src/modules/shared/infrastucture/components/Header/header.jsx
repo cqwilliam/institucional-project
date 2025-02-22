@@ -21,12 +21,12 @@ const Header = () => {
 
         {/* Menú de navegación */}
         <nav
-          className={`fixed top-0 left-0 h-full w-3/4 bg-slate-600 opacity-90 transition-transform duration-500 mt-20 
+          className={`fixed top-0 left-0 h-full w-3/4 bg-slate-600 opacity-90 transition-transform duration-100 mt-20 
   ${isMenuOpen ? "translate-x-0" : "-translate-x-full"} 
   sm:static sm:flex sm:translate-x-0 sm:bg-transparent sm:w-auto sm:mt-0`}
         >
           <NavMenu isMenuOpen={isMenuOpen} />
-        </nav>
+        </nav>  
       </div>
     </aside>
   );

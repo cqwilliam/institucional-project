@@ -18,7 +18,7 @@ const NavItem = ({ title, menuItems }) => {
         if (dropdownRef.current && !dropdownRef.current.matches(':hover')) {
           setIsDropdownOpen(false);
         }
-      }, 300);
+      }, 100);
     }
   };
 
